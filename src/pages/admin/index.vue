@@ -1,4 +1,10 @@
-@route meta.layout: 'dashboard'
+<script setup>
+definePage({
+  meta: {
+    layout: 'dashboard'
+  }
+});
+</script>
 <template>
-  <h2>Trang admin dashboard</h2>
+  <h2>hahaha</h2>
 </template>
