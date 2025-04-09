@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
 import VueRouter from 'unplugin-vue-router/vite'
+import vuetify from 'vite-plugin-vuetify'
 import path from 'path'
 
 export default defineConfig({
@@ -12,7 +13,8 @@ export default defineConfig({
         layoutsFolder: 'src/layouts',
       }
     }),
-    Vue()
+    Vue(),
+    vuetify({ autoImport: true }),
   ],
   resolve: {
     alias: {
